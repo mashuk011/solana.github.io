@@ -1,0 +1,1467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --gray: #86b8b6;
+    --gray-dark: #387462;
+    --primary: #00ffbd;
+    --secondary: #409088;
+    --success: #42ba96;
+    --info: #b45be1;
+    --warning: #d83aeb;
+    --danger: #43b5c5;
+    --light: #f9fdfc;
+    --dark: #1b4e3f;
+    --primary-desat: #42ba96;
+    --black: #232323;
+    --white: #fff;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    /* overflow-x: hidden; */
+}
+
+/******************************** Navbar Start  ____________________________ ******************** */
+.nav-logo{
+    width: 20%;
+    box-sizing: border-box;
+}
+.nav-logo img{
+    width:58%;
+    box-sizing: border-box;
+
+}
+
+.nav-item{
+    font-size: 1.1rem;
+    margin-left: 2rem;
+}
+
+.nav-link{
+    color: #fff !important;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.navbar{
+    padding: .6rem 0 1rem 0;
+}
+
+.header-heading{
+    text-align: center;
+    padding: .5rem 0 .1rem 0;
+    background: linear-gradient(120deg, #00ffbd  , #43b5c5,  #d83aeb );
+}
+
+.header-heading h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    word-spacing: 5px;
+}
+
+.nav-link:hover{
+    color: var(--green) !important;
+
+}
+
+.button button{
+    margin-left: 2rem;
+}
+
+@media(max-width: 1000px){
+    html{
+        font-size: 56%;
+    }
+      .navbar-expand-lg .navbar-nav{
+         display: flex !important;
+         justify-content: center !important;
+         align-items: center !important;
+    }
+    .nav-logo{
+        width: 30%;
+        box-sizing: border-box;
+    }
+    .nav-logo img{
+        width: 100%;
+        box-sizing: border-box;
+    
+    }
+     .navbar-expand-lg .navbar-nav .nav-link{
+            font-size: 2rem !important;
+            padding-top: 1.4rem;
+    }
+
+    .navbar-expand-lg{
+        padding: 2rem !important;
+        box-sizing: border-box;
+    }
+
+   
+
+
+    
+}
+
+/********************************* Navbar Completed ________________________************** */
+
+/****************************** Home Section Start  __________________---(********** */
+
+.home-sec{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.home-video video{
+    width: 100%;
+    height: 100%;
+}
+
+.home-text{
+    position: absolute;
+    top: 6rem;
+    left: 10rem;
+    /* width: 100%; */
+}
+
+.home-text h1{
+    width: 36%;
+    font-size: 6rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+
+
+}
+
+::-webkit-scrollbar{
+    width: .375rem;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--orange);
+}
+
+.home-but #but1{
+    background-color: var(--teal) !important;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: .8rem;
+    letter-spacing: 2px;
+    color: #000;
+    margin-right: 1rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.home-but2 #but2{
+    background-color: transparent!important;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: .8rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-right: 1rem;
+    border: 1px solid var(--white);
+    transition: all 0.2s ease-in-out;
+
+    
+}
+
+.home-butto{
+    margin-bottom: 2rem;
+    display: flex !important
+}
+
+.home-but #but1:hover{
+    transform: translateY(-5px);
+    background-color: #fff !important;
+    color: #000 !important; 
+}
+
+.home-but2 #but2:hover{
+    transform: translateY(-5px);
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.home-text h3{
+    color: var(--white);
+    width: 40%;
+    font-size: 1.5rem;
+
+}
+
+
+@media (max-width: 1400px){
+    .home-text{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: -8rem;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+
+
+
+    }
+
+    .home-text h1{
+        width: 100%;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .home-text h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.9rem;
+        padding: 2rem;
+        box-sizing: border-box;
+        
+    }
+
+
+        
+    
+    
+    
+
+    .home-butto{
+        margin-bottom: 2rem;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 70%; */
+        text-align: center;
+        box-sizing: border-box;
+        
+    }
+
+    .home-but button{
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem 2rem 1rem 2rem !important;
+        letter-spacing: .1px;
+    }
+
+    .home-but2 button{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem 1rem 2rem !important;
+        letter-spacing: .1px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .home-video video{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+}
+
+@media (max-width: 840px){
+    .home-text h1{
+        width: 100%;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .home-text h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1.9rem;
+        padding: 2rem;
+        box-sizing: border-box;
+        
+    }
+}
+
+
+
+
+/***************_____________________________ Home Section Completed ******************************** */
+
+/************************** Counter Section Start *********************************************** */
+
+ 
+.counter-wrap{
+
+    width: 97%;
+    margin: 6rem auto;
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+     
+
+.counter-1{
+    position: relative;
+    width: 369px;
+    height: 100px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+
+}
+
+.counter-1 h4{
+    font-size: 1.1rem;
+    color: rgb(36, 35, 35);
+}
+
+.counter-1 h2{
+    font-size: 3rem;
+}
+
+@media (max-width: 1000px){
+    .counter-wrap{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .counter-1{
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        display: block;
+        padding: 1rem 1rem 0 1rem;
+        text-align: justify;
+        margin-bottom: 0;
+        
+    
+    }
+
+    .counter-1 h4{
+        font-size: 1.5rem;
+        color: rgb(36, 35, 35);
+    }
+
+    .counter-1 h2{
+        font-size: 4rem;
+    }
+}
+    
+
+
+
+
+
+
+/***************************** _________________________ Counter Section Completed ****************************** */
+
+/******************* About Sec Start ****************************** */
+
+.about-sec{
+    position: relative;
+    width: 90%;
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-text {
+    width: 100%;
+    box-sizing: border-box;
+}
+.left-text h2{
+    font-size: 4.4rem;
+    color: var(--white);
+    width: 80%;
+}
+
+.right-text{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.right-text h3{
+    color: rgb(238, 236, 236);
+    font-size: 1.8rem;
+    margin-bottom: 3.4rem;
+}
+
+.home-but4 button{
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    color: #fff !important;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.home-but4 button:hover{
+    background-color: #fff;
+    color: #000 !important;
+    transform: translateY(-8px);
+    border: 1px solid #fff;
+}
+
+.home-but4 button:focus{
+    box-shadow: none !important;
+
+}
+
+@media(max-width:1000px){
+    .about-sec{
+        position: relative;
+        width: 90%;
+        margin: 10rem auto;
+        display: block;
+    }
+
+    .left-text{
+        padding: 1rem ;
+    }
+
+    .left-text h2{
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-text{
+       padding: 1rem;
+    }
+    
+    .right-text h3{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .home-but4{
+        text-align: center;
+    }
+    .home-but4 button{
+        border-radius: 23px;
+        font-size: 1.7rem;
+        padding: 1.1rem;
+
+    }
+}
+
+/********************8 About Sec Completed *************************** */
+
+/************************ Video section  ************************************** */
+
+.video-sec{
+    position:relative;
+    margin-top: 15rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.dot-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video-tag{
+    position: absolute;
+    top: -6rem;
+    right: 7rem;
+    width: 500px;
+    height: 300px;
+    background-color: var(--primary);
+    padding: 1rem 2rem 2rem 2rem;
+    box-shadow: 10px 10px 20px var(--primary);
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.video-tag:hover{
+    box-shadow: -10px -10px 20px var(--primary);
+}
+
+.video-tag h2{
+    font-size: 4.5rem;
+    color: #000;
+    padding-bottom: .6rem;
+}
+
+.video-tag p{
+    font-size: 1.4rem;
+    width: 75%;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    padding-bottom: 2rem;
+
+}
+
+.video-butto button{
+    border-radius: 24px;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .7rem 1.5rem .7rem 1.5rem;
+    transition: all .2s ease-in-out;
+}
+
+.video-butto button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transform: translateY(-10px);
+}
+
+.video-butto button:focus{
+    box-shadow: none !important;
+    border: none !important;
+    background-color: none !important;
+}
+
+@media(max-width: 1000px){
+    .dot-video{
+       
+        display: none;
+    }
+
+    .video-tag{
+        position: absolute;
+        top: -6rem;
+        right: 0;
+        width:100%;
+        height: auto;
+        padding: 1rem 2rem 2rem 2rem;
+        transition: all 0.4s ease-in-out;
+    
+    }
+    .video-tag h2{
+        font-size: 5.5rem;
+        color: #000;
+        padding-bottom: .6rem;
+    }
+    
+    .video-tag p{
+        font-size: 2rem;
+        width: 85%;
+        font-weight: 400;
+        text-align: justify;
+    
+    }
+
+    .video-butto button{
+        border-radius: 24px;
+        background-color: #000;
+        border: 1px solid #000;
+        padding: .7rem 1.5rem .7rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    
+    
+}
+
+
+/**************************  video Section Completed ************************* */
+
+/*********************** Scale global section _______________________-****************  */
+
+.solana-global{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 9rem;
+    box-sizing: border-box;
+
+}
+
+
+.global-text{
+        flex-direction: column;
+        display: block;
+        width: 53%;
+        margin: auto;
+        margin-bottom: 3rem;
+}
+
+.global-text h2{
+    text-align: justify;
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 0;
+    line-height: 49px;
+    margin-bottom: 2rem;
+
+}
+
+.global-text h2 span{
+    font-size: 2.5rem;
+}
+
+.global-text p{
+    color: rgb(243, 243, 243);
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.global-img{
+    width: 100%;
+    height: 100%;
+}
+
+.global-img img{
+    /* position: absolute; */
+    width: 100%;
+}
+
+@media(max-width: 1000px){
+    .solana-global{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 25rem;
+        box-sizing: border-box;
+    
+    }
+    
+    
+    .global-text{
+            display: block;
+            width: 100%;
+            margin: auto;
+            margin-bottom: .5rem;
+            padding: 2rem;
+            box-sizing: border-box;
+    }
+
+    .global-text h2{
+        font-size: 5rem;
+        line-height: 34px;
+    
+    }
+    
+    .global-text h2 span{
+        font-size: 3rem;
+        word-spacing: 0%;
+    }
+
+    .global-text p{
+        color: rgb(255, 255, 255);
+        font-size: 1.9rem;
+        word-spacing: 0%;
+    }
+
+    
+.global-img img{
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+}
+}
+
+
+
+
+/************************** S cale global section Completd_______________________***************  */
+
+/* **********************8 Card Section______________________________-**********8 */
+
+.solana-card-sec{
+    width: 90%;
+    position: relative;
+    margin: 9rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.solana-card{
+    position: relative;
+    width:600px;
+    height: 750px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    background-color: rgb(31, 30, 30);
+   
+}
+
+.sol-img{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 100%;
+}
+
+.sol-img img{
+    border-radius: 16px;
+    width: 100%;
+  
+}
+
+.solana-detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.solana-detail h2{
+    font-size: 4.5rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+.solana-detail  h5{
+    color: #fff;
+    font-size: 1.45rem;
+}
+
+@media(max-width:552px){
+
+    .solana-card-sec{
+        display: block;
+        width: 100%;
+        margin: 9rem auto;
+        padding: 2rem;
+        box-sizing: border-box;
+        
+
+
+
+    }
+
+    .solana-card{
+        position: relative;
+        width:100%;
+        height: 500px ;
+        /* padding: 3rem; */
+        /* box-sizing: border-box; */
+        margin-bottom: 2rem;
+        
+
+    
+       
+    }
+    .sol-img{
+        position: absolute fixed;
+        bottom:0;
+        right: 0;
+        width: 100%;
+        height: auto ;
+    }
+
+    
+    .sol-img img{
+        width: 100%;
+        height: auto;
+      
+    }
+    
+   
+
+    .solana-detail h2{
+        font-size: 4.5rem;
+        color: var(--white);
+        padding-bottom: 1rem;
+    }
+    
+    .solana-detail  h5{
+        color: #fff;
+        font-size: 1.55rem;
+    }
+}
+
+@media (max-width: 1100px){
+    .solana-card-sec{
+        display: block;
+        width: 100%;
+        margin: 9rem auto;
+        padding: 2rem;
+        box-sizing: border-box;
+        
+
+
+
+    }
+    .solana-card{
+        position: relative;
+        width:100%;
+        height: 500px ;
+        padding: 2rem;
+        box-sizing: border-box;
+
+    
+       
+    }
+    .sol-img{
+        position: absolute fixed;
+        bottom:0;
+        right: 0;
+        width: 100%;
+        height: auto ;
+    }
+
+    
+    .sol-img img{
+        width: 100%;
+        height: auto;
+      
+    }
+    
+}
+
+/* @media(max-width: 500px){
+    .solana-card-sec{
+        display: block;
+        width: 100%;
+        margin: 9rem auto;
+        padding: 2rem;
+        box-sizing: border-box;
+        
+
+
+
+    }
+    .solana-card{
+        position: relative;
+        width:100%;
+        height: 500px ;
+        padding: 2rem;
+        box-sizing: border-box;
+
+    
+       
+    }
+
+   
+
+
+} */
+
+/******************** Card Section Completed_________________--********************  */
+
+/************************gilder section Start  ****************************************** */
+
+.glider-sec{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.glider-img{
+    width: 100%;
+    height: 100%;
+}
+
+.glider-img img{
+    width: 100%;
+}
+
+.glider-text{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    
+}
+
+.glider-text h2{
+    font-size: 4rem;
+    color: var(--white);
+    line-height: 50px;
+    padding-bottom: 1rem;
+}
+
+.glider-text h2 span{
+    font-size: 2.56rem;
+}
+
+.glider-text h5{
+    color: #fffdfd;
+    width: 75%;
+    font-size: 1.8rem;
+}
+
+@media(max-width: 1250px) and (max-width: 1060px){
+    .glider-sec{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .glider-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .glider-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .glider-text{
+        position: relative;
+        bottom: 1rem;
+        right: 0;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        
+    }
+    
+    .glider-text h2{
+        font-size: 3.56rem;
+        color: var(--white);
+        line-height: 30px;
+        padding-bottom: 1rem;
+        /* text-align: justify; */
+        padding: 1rem;
+    }
+    
+    .glider-text h2 span{
+        font-size: 2.56rem;
+    }
+    
+    .glider-text h5{
+        color: #fffdfd;
+        width: 100%;
+        font-size: 1.89rem;
+        text-align: justify;
+        line-height: 24.56px;
+        word-spacing: 0%;
+        padding: 1.4rem;
+        box-sizing: border-box;
+    }
+    
+}
+
+/*************************** Solana Card Sec. Start ************************************
+
+*/
+
+.community-sec{
+    /* position: relative; */
+    width: 85%;
+    margin:  9rem auto;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.solana-cardd{
+    position: relative;
+    width: 540px;
+    height: 330px;
+    background-color: rgb(231, 81, 199);
+    box-shadow: 0 0 20px 0 rgb(68, 68, 68);
+    -webkit-box-reflect: below 8px  linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3) );
+    border-radius: 20px;
+    padding: 1rem 2rem 1rem 2rem; 
+
+}
+
+.solana-cardd2{
+    position: relative;
+    width: 540px;
+    height: 330px;
+    background-color: var(--teal);
+    box-shadow: 0 0 20px 0 rgb(68, 68, 68);
+    -webkit-box-reflect: below 10px  linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3) );
+    border-radius: 20px;
+    padding: 1rem 2rem 1rem 2rem; 
+
+}
+.solana-cardd h2{
+    font-size: 3.2rem;
+    color: rgb(20, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+.solana-cardd2 h2{
+    font-size: 3.2rem;
+    color: rgb(20, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+.solana-cardd  p{
+    font-size: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.solana-cardd2  p{
+    font-size: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+
+.card-but{
+   padding-top: 5.56rem;
+
+}
+
+.card-but button{
+
+    padding: .7rem 1.7rem .7rem 1.7rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 23px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-but button:focus{
+    box-shadow: none !important;
+}
+
+.card-but button:hover{
+    transform: translateY(-5px);
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+@media (max-width: 1000px){
+    .community-sec{
+        position: relative;
+        width: 95%;
+        margin:  9rem auto;
+        display: block;
+        
+    }
+    
+    .solana-cardd{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 2rem 1rem 2rem; 
+        margin-bottom: 4rem;
+
+        
+    
+    }
+
+    .solana-cardd2{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 2rem 1rem 2rem; 
+        margin-top:36rem;
+    
+    }
+
+    .solana-cardd h2{
+        font-size: 4.67rem;
+        color: rgb(20, 20, 20);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        padding-bottom: .5rem;
+        text-align: left;
+    }
+
+    .solana-cardd2 h2{
+        font-size: 4.67rem;
+        color: rgb(20, 20, 20);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        padding-bottom: .5rem;
+        text-align: left;
+    }
+
+    .solana-cardd  p{
+        font-size: #000;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .solana-cardd2  p{
+        font-size: #000;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .card-but button{
+
+        padding: .7rem 1.7rem .7rem 1.7rem;
+        font-size: 1.5rem;
+        border: 1px solid #000;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media(max-width: 350px ){
+    .solana-cardd2{
+        width: 100%;
+        height: 100%;
+        padding: 1rem 2rem 1rem 2rem; 
+        margin-top:40rem;
+        
+    }
+}
+
+.developer{
+    position: relative;
+    width: 80%;
+    margin: 29rem auto;
+
+}
+
+.developer-box{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(128,236,255,1);
+    border-radius: 20px;
+    -webkit-box-reflect: below 10px linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 30px rgb(223, 224, 224);
+
+}
+
+.left-box{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.left-box h2{
+    font-size: 3.67rem;
+    width: 40%;
+    color: #000;
+    line-height: 55px;
+}
+
+.right-det{
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+
+}
+
+.right-det h5{
+    font-size: 1.4rem;
+    color: #000;
+
+}
+
+.developer-but{
+    padding-top: 1.5rem;
+}
+
+.developer-but button{
+    background-color: #000;
+    color: #fff;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.developer-but button:focus{
+    box-shadow: none !important;
+}
+
+.developer-but button:hover{
+    transform: translateY(-5px);
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+@media(max-width: 1000px){
+    .developer{
+        /* margin-top: 26rem; */
+    }
+    .developer-but button{
+        font-size: 1.3rem;
+    
+    }
+
+    .right-det{
+        width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 0;
+    
+    }
+
+    .right-det h5{
+        font-size: 1.9rem;
+        color: #000;
+    
+    }
+
+    .left-box h2{
+        font-size: 4.47rem;
+        width: 40%;
+        color: #000;
+        line-height: 42px;
+    }
+}
+
+@media(max-width: 760px){
+    .developer-box{
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        display: block;
+        box-shadow: 0 4px 30px rgb(223, 224, 224);
+        margin-top: 40rem;
+        margin-bottom: 30rem;
+        box-sizing: border-box;
+    
+    }
+    .left-box h2{
+        font-size: 4.87rem;
+        width: 100%;
+        color: #000;
+        line-height: 55px;
+    }
+
+    .developer{
+        width: 88%;
+        margin:  auto;
+    
+    }
+}
+
+@media(max-width: 570px){
+    .developer-box{
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        display: block;
+        margin-top: 45rem;
+        margin-bottom: 45rem;
+        box-sizing: border-box;
+    
+    }
+
+    .developer{
+        position: relative;
+        width: 88%;
+        margin:  auto;
+    
+    }
+}
+
+.line{
+    
+    border-bottom: 2px solid var(--white);
+}
+
+/* /******************** Fotter Sec start ************************ */
+
+.footer-sec{
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+.footer-sec h2{
+    font-size: 2.5rem;
+    color: #fffdfd;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.footer-list-sec{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.list-item h3{
+    color: #302f2f;
+}
+
+.list-item .ul li{
+    color: #fff !important;
+    padding-top: 1rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.list-item .ul li:hover{
+    text-decoration: underline;
+}
+
+.last-footer-tag{
+    display: block;
+    width: 85%;
+    margin: 5rem auto;
+    position: relative;
+    background-color: var(--white);
+    height: 100%;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 4px 4px 25px var(--light);
+
+}
+
+.solana-logo{
+    width: 100%;
+    height: 100%;
+}
+
+.solana-logo img{
+     width: 8%;
+}
+
+.solana-brow-logo i{
+    color: #000;
+    margin-left: .6rem;
+}
+
+.solana-brow-logo{
+    display: flex;
+
+}
+
+.flexo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px){
+    .footer-sec{
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-list-sec{
+        display: block;
+    }
+
+    .list-item{
+        margin-top: 2.5rem;
+    }
+
+    .list-item h3{
+        font-size: 2.78rem;
+    }
+    .list-item .ul li{
+        font-size: 1.78rem;
+        margin-left: .5rem;
+    }
+/* 
+    .last-footer-tag{
+        display: block;
+        width: 90%;
+        margin: 5rem auto;
+        height: 100%;
+        border-radius: 15px;
+        padding: 1rem;
+        box-sizing: border-box;
+    
+    }
+    
+    .solana-logo{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .solana-logo img{
+         width: 30%;
+    }
+
+    .solana-brow-logo{
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .solana-brow-logo h4{
+        font-size: 1.67rem;
+    }
+    
+    .flexo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .solana-brow-logo i{
+        color: #000;
+        margin-left: 1.3rem;
+    } */
+}
+
+
+@media (max-width: 600px){
+    .last-footer-tag{
+        display: block;
+        width: 90%;
+        margin: 5rem auto;
+        height: 100%;
+        border-radius: 15px;
+        padding: 1rem;
+        box-sizing: border-box;
+    
+    }
+    
+    .solana-logo{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .solana-logo img{
+         width: 32%;
+    }
+
+    .solana-brow-logo{
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .solana-brow-logo h4{
+        font-size: 1.47rem;
+    }
+    
+    .flexo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .solana-brow-logo i{
+        color: #000;
+        margin-left: 1.3rem;
+    }
+}
